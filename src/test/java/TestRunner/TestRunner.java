@@ -7,7 +7,7 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(features = "Features",
         glue = "stepDefinitions"
-, tags = "@loginParam"
-,dryRun = true)
+, tags = "@dummyLogin"
+/*,dryRun = true*/)
 public class TestRunner {
 }

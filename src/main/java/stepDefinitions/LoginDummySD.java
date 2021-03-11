@@ -70,4 +70,16 @@ public class LoginDummySD {
         System.out.println("password="+password);
     }*/
 
+
+
+    @Given("^I open the browser$")
+    public void i_open_the_browser() throws Throwable {
+        System.out.println("======> I open the browser");
+    }
+
+    @And("^I maximize it$")
+    public void i_maximize_it() throws Throwable {
+        System.out.println("======> I maximize it");
+    }
+
 }

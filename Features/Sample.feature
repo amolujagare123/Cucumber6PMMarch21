@@ -1,5 +1,10 @@
 Feature: All login tests
 
+  Background: opend browser & maximize it
+    Given I open the browser
+    And I maximize it
+
+
   @realLogin
 Scenario: to test the functionality of login button for valid input
   Given I am on login page
