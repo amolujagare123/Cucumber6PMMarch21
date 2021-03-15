@@ -14,7 +14,7 @@ Scenario: to test the functionality of login button for valid input
 
 
 
-  @dummyLogin
+  @dummyLogin      @verifyHook
   Scenario: to test the functionality of login button for valid input : dummy
     Given I am on login page of billing
     When I enter username and password correctly

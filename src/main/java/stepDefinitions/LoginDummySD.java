@@ -4,6 +4,7 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
 
 public class LoginDummySD {
 
@@ -38,7 +39,7 @@ public class LoginDummySD {
     @Then("^I should get error message$")
     public void i_should_get_error_message() throws Throwable {
         System.out.println("output: >>> I should get error message");
-
+        Assert.assertEquals("this is failed",true,false);
     }
 
 
@@ -73,12 +74,12 @@ public class LoginDummySD {
 
 
     @Given("^I open the browser$")
-    public void i_open_the_browser() throws Throwable {
+    public void i_open_the_browser() {
         System.out.println("======> I open the browser");
     }
 
     @And("^I maximize it$")
-    public void i_maximize_it() throws Throwable {
+    public void i_maximize_it()  {
         System.out.println("======> I maximize it");
     }
 
